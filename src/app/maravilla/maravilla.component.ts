@@ -18,7 +18,7 @@ export class MaravillaComponent implements OnInit {
 
   getMaravillas() {
     this.maravillaService.getSeries().subscribe(Maravilla => {
-      this.maravillas = Maravilla;
+    this.maravillas = Maravilla.sort((a, b) => (a.country < b.country ? -1 : 1));
 
     });
   }
@@ -27,6 +27,7 @@ export class MaravillaComponent implements OnInit {
     this.selected = true;
     this.selectedMaravilla = maravilla;
   }
+
 
   ngOnInit() {
 
