@@ -1,0 +1,43 @@
+
+<div class="container">
+  <div>
+    <p class = "centrado">
+    <img class ="photo" src="./assets/maravillas.jpg" height="200px" width="500px" alt="Tv">
+    </p>
+  </div>
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>Number of Members</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of bandas" (click)="onSelected(c)">
+              <td>
+                <dd>{{c.id}}</dd>
+              </td>
+              <td>
+                <dd>{{c.name}}</dd>
+              </td>
+              <td>
+                <dd>{{c.country}}</dd>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div *ngIf="selected">
+            <app-banda-detail [bandaDetail]="selectedBanda"></app-banda-detail>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
