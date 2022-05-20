@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BandaModule } from './banda/banda.module';
+import { MaravillaModule } from './maravilla/maravilla.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { BandaModule } from './banda/banda.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BandaModule,
+    MaravillaModule,
     HttpClientModule
   ],
   providers: [],

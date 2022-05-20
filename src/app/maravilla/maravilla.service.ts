@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Banda } from './banda';
+import { Maravilla } from './maravilla';
 
 import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BandaService {
+export class MaravillaService {
   private apiUrl = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 
-  getSeries(): Observable<Banda[]> {
-    return this.http.get<Banda[]>(this.apiUrl);
+  getSeries(): Observable<Maravilla[]> {
+    return this.http.get<Maravilla[]>(this.apiUrl);
   }
 }

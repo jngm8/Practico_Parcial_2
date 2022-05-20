@@ -1,4 +1,4 @@
-export class Banda {
+export class Maravilla {
 
   id:number;
   name: string;

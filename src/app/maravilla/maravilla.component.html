@@ -12,11 +12,11 @@
             <tr>
               <th>id</th>
               <th>Name</th>
-              <th>Number of Members</th>
+              <th>Country</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let c of bandas" (click)="onSelected(c)">
+            <tr *ngFor="let c of maravillas" (click)="onSelected(c)">
               <td>
                 <dd>{{c.id}}</dd>
               </td>
@@ -33,7 +33,7 @@
       <div class="col">
         <div class="card" style="width: 18rem;">
           <div *ngIf="selected">
-            <app-banda-detail [bandaDetail]="selectedBanda"></app-banda-detail>
+            <app-maravilla-detail [maravillaDetail]="selectedMaravilla"></app-maravilla-detail>
           </div>
         </div>
       </div>
