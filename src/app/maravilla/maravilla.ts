@@ -2,11 +2,11 @@ export class Maravilla {
 
   id:number;
   name: string;
-  country: number;
+  country: string;
   description: string;
   image:String
 
-  public constructor(id:number,name: string, country: number, description: string,image:string) {
+  public constructor(id:number,name: string, country: string, description: string,image:string) {
     this.id = id;
     this.name = name;
     this.country = country;
